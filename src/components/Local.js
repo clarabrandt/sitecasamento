@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Local.css'
 import igreja from './images/igreja.jpg'
-import igreja2 from './images/igreja2.jpg'
 import festa from './images/Festa.jpg'
 import love from './images/love.svg'
 import rings from './images/rings.svg'
