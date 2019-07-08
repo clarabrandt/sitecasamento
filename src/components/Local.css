@@ -1,0 +1,89 @@
+.local {
+  width: 100%;
+  height: 100%;
+}
+.local-banner {
+  background-color: rgb(255, 223, 208);
+  width: 100%;
+  height: 200px;
+  align-items: center;
+}
+.local-banner--text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  text-align: center;
+}
+.local-content {
+  margin: 70px 200px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: #6E6E86;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+}
+.local-content--banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.local-content--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+.local-content--title--text{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.local-content--title--icon {
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 20px 10px;
+}
+.local-content--details {
+  display: flex;
+  margin: 20px 0 60px 0;
+  justify-content: space-between;
+}
+.local-content--details--block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.local-content--details--title {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #D65679;
+}
+.church {
+  display: flex;
+  margin-bottom: 100px;
+  
+}
+.church-text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  
+}
+.church-pic, 
+.party-pic {
+  justify-content: center;
+}
+.party-pic--img,
+.church-pic--img {
+  border-radius: 3px;
+  -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+  -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+  box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+}
+.icons-line {
+  display: flex;
+  justify-content: center;
+  margin: 50px
+}
+

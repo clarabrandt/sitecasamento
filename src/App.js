@@ -3,6 +3,7 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Layout from "./components/Layout.js";
 import Madrinhas from "./components/Madrinhas.js";
+import Local from "./components/Local.js";
 
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
           <Switch>
             <Route path="/home" component={Layout} />
             <Route path="/madrinhas" component={Madrinhas} />
+            <Route path="/local" component={Local} />
           </Switch>
         </BrowserRouter>
       </div>
