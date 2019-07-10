@@ -1,10 +1,42 @@
 .banner {
-  background-color: blueviolet;
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("./photos/SaeTomas4.jpeg");
+    background-attachment: scroll;
+    background-size: cover;
+    margin-bottom: 150px;
+ 
+
+    /* opacity: 0.5; */
+
+   
 }
 .banner-text {
-  font-family: 'Dancing Script', cursive;
-  font-size: 100px;
-  text-align: center;
+  position: relative; 
+  font-family: 'Dancing Script', 'Alex Brush';
+  font-size: 120px; 
+  color: #fa6704; 
+  /* mix-blend-mode: color-dodge; */
+  position: absolute;
+  top: 50%;
+  left: 50%;;
+  transform: translate(-50%, -50%);
+  font-weight: 600; 
+  
+  
+  /* font-family: 'Dancing Script', 'Alex Brush';
+  font-size: 120px;
+  color: #fa6704;
+  position: absolute;
+  top: 50%;
+  left: 50%;;
+  transform: translate(-50%, -50%);
+  font-weight: 600; */
+}
+.heart-icon {
+  position: absolute;
+  top: 70%;
+  left: 50%;;
+  transform: translate(-50%, -50%);
 }
