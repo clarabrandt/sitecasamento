@@ -1,0 +1,21 @@
+.menu {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-self: center;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  
+}
+.menu.sticky {
+  position: fixed;
+  background-color: rgb(9, 8, 24);
+  opacity: 0.9;
+  transition: 1s;
+  z-index: 10;
+}
+.heart-icon--menu{
+  align-self: center;
+}
