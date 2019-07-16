@@ -4,6 +4,7 @@ import "./App.css";
 import Layout from "./components/Layout.js";
 import Madrinhas from "./components/Madrinhas.js";
 import Local from "./components/Local.js";
+import Gallery from "./components/Gallery.js";
 
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
             <Route path="/home" component={Layout} />
             <Route path="/madrinhas" component={Madrinhas} />
             <Route path="/local" component={Local} />
+            <Route path="/galeria" component={Gallery} />
           </Switch>
         </BrowserRouter>
       </div>
