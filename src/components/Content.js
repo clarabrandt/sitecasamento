@@ -3,6 +3,7 @@ import "./Content.css"
 import Menu from './Menu'
 import Local from './Local'
 import Gallery from './Gallery'
+import RSVP from './RSVP'
 
 export default class Content extends Component {
   render() {
@@ -11,6 +12,7 @@ export default class Content extends Component {
         <Menu />
         <Local />
         <Gallery />
+        <RSVP />
       </div>
     )
   }

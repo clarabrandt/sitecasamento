@@ -1,0 +1,15 @@
+.rsvp {
+  width: 100%;
+  height: 100%;
+}
+.rsvp-content {
+  margin: 50px 100px;
+  display: flex;
+  height: 100%;
+}
+.rsvp-title {
+  color: #6E6E86;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}

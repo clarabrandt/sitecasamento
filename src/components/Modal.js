@@ -1,36 +1,29 @@
-import React, { Component } from 'react'
-import './Modal.css'
-import one from './photos/SaeTomas1.jpg'
-import Portal from './Portal'
+import React from 'react';
+import Portal from './Portal';
+import './Modal.css';
 
-export default class Modal extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      modal: null
-    };
-
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-
-  handleClick() {
-    this.setState({
-      modal: false
-    })
-
-  }
-  render() {
-    const { children } = this.props
+class Modal extends React.Component {
+  render = () => {
+    const { children, toggleFn, isOpen = false } = this.props;
     return (
       <Portal>
-        <div>
-          <img className='image-modal' alt=''>{children}</img>
-        </div>
+        {
+          isOpen &&
+          <div className={`modal ${!!isOpen ? 'visible' : 'hidden'}`}>
+            <div className={`modal__container ${!!isOpen ? 'visible' : 'hidden'}`}>
+              <div className="modal__header">
+                <div className="modal__title" />
+                <div className="modal__close" onClick={toggleFn}>
+                  x
+                </div>
+              </div>
+              <div className="modal__body">{children}</div>
+            </div>
+          </div>
+        }
       </Portal>
-    )
-  }
+    );
+  };
 }
 
-
+export default Modal;

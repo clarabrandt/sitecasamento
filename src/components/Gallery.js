@@ -12,18 +12,30 @@ export default class Gallery extends Component {
     super(props);
 
     this.state = {
-      modal: false
+      modalOpen: false
     };
 
-    this.handleClick = this.handleClick.bind(this);
+    this.toggleModal = this.toggleModal.bind(this);
+    this.renderModal = this.renderModal.bind(this);
   }
 
+  renderModal() {
+    return (
+      <Modal toggleFn={this.toggleModal} isOpen={this.state.modalOpen}>
+        <img src={this.state.selectedPicture} alt='' />
+      </Modal>
+    );
+  };
 
-  handleClick() {
-    this.setState({
-      modal: true
-    })
+  toggleModal(picture) {
+    this.setState(prevState => ({
+      modalOpen: !prevState.modalOpen,
+      selectedPicture: picture,
+    }));
+  };
 
+  jalapenho = () => {
+    return this.toggleModal
   }
 
   render() {
@@ -31,15 +43,13 @@ export default class Gallery extends Component {
       <div className='gallery'>
         <div className='gallery-title'>Fotos do casal</div>
         <div className='gallery-grid'>
-          <img className='gallery-item gallery-item--1 gallery-img' src={one} alt="couple" onClick={this.handleClick} />
-          {this.state.modal ? (
-            <Modal />
-          ) : false}
-          <img className='gallery-item gallery-item--2 gallery-img' src={two} alt="couple" onClick={this.handleClick} />
-          <img className='gallery-item gallery-item--3 gallery-img' src={three} alt="couple" onClick={this.handleClick} />
-          <img className='gallery-item gallery-item--4 gallery-img' src={four} alt="couple" onClick={this.handleClick} />
-          <img className='gallery-item gallery-item--5 gallery-img' src={five} alt="couple" onClick={this.handleClick} />
+          <img className='gallery-item gallery-item--1 gallery-img' src={one} alt="couple" onClick={() => this.toggleModal(one)} />
+          <img className='gallery-item gallery-item--2 gallery-img' src={two} alt="couple" onClick={() => this.toggleModal(two)} />
+          <img className='gallery-item gallery-item--3 gallery-img' src={three} alt="couple" onClick={() => this.toggleModal(three)} />
+          <img className='gallery-item gallery-item--4 gallery-img' src={four} alt="couple" onClick={() => this.toggleModal(four)} />
+          <img className='gallery-item gallery-item--5 gallery-img' src={five} alt="couple" onClick={() => this.toggleModal(five)} />
         </div>
+        {this.renderModal()}
       </div>
     )
   }

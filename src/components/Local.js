@@ -39,7 +39,7 @@ export default class Local extends Component {
             </div>
           </div>
           <div className='party'>
-          <div className='local-banner'>
+            <div className='local-banner'>
               <div className='local-banner--title'>
                 <div className='local-banner--title-text'>A FESTA</div>
                 <div className='local-banner--title-icon'><img src={glasses} alt="Heart" /></div>
@@ -64,7 +64,7 @@ export default class Local extends Component {
             </div>
           </div>
           <div className='map'>
-          <img className='pic--img' src={festa} height='400' width='400' alt="Church" />
+            <img className='pic--img' src={festa} height='400' width='400' alt="Church" />
           </div>
         </div>
       </div>
