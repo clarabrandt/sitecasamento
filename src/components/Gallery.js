@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import './Gallery.css'
-import one from './photos/SaeTomas1peq.jpg'
-import two from './photos/SaeTomas2peq.jpg'
+import one from './photos/SaeTomas1.jpg'
+import two from './photos/SaeTomas2.jpg'
 import three from './photos/SaeTomas3peq.jpeg'
-import four from './photos/SaeTomas5peq.jpeg'
-import five from './photos/SaeTomas6peq.jpeg'
+import four from './photos/pertinho(1).jpg'
+import five from './photos/castelo(1).jpg'
 import Modal from './Modal'
 
 export default class Gallery extends Component {
