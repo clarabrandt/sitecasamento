@@ -4,14 +4,16 @@ import Menu from './Menu'
 import Local from './Local'
 import Gallery from './Gallery'
 import RSVP from './RSVP'
-import History from './History'
+import Couple from './Couple'
+import Timeline from './Timeline'
 
 export default class Content extends Component {
   render() {
     return (
       <div className='content'>
         <Menu />
-        <History />
+        <Couple />
+        <Timeline />
         <Local />
         <Gallery />
         <RSVP />
