@@ -12,6 +12,7 @@ export default class Local extends Component {
   render() {
     return (
       <div className='local'>
+        <div className='local-title'>Data e Local</div>
         <div className='local-content'>
           <div className='church'>
             <div className='local-banner'>

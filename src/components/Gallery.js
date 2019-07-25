@@ -41,7 +41,7 @@ export default class Gallery extends Component {
   render() {
     return (
       <div className='gallery'>
-        <div className='gallery-title'>Fotos do casal</div>
+        <div className='gallery-title'>Nossos momentos</div>
         <div className='gallery-grid'>
           <img className='gallery-item gallery-item--1 gallery-img' src={one} alt="couple" onClick={() => this.toggleModal(one)} />
           <img className='gallery-item gallery-item--2 gallery-img' src={two} alt="couple" onClick={() => this.toggleModal(two)} />
