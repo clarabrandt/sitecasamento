@@ -7,6 +7,7 @@ import RSVP from './RSVP'
 import Couple from './Couple'
 import Timeline from './Timeline'
 import Counter from './Counter'
+import Madrinhas from './Madrinhas'
 
 export default class Content extends Component {
   render() {
@@ -17,6 +18,7 @@ export default class Content extends Component {
         <Timeline />
         <Counter />
         <Local />
+        <Madrinhas />
         <Gallery />
         <RSVP />
       </div>
