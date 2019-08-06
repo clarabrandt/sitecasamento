@@ -1,8 +1,8 @@
 .madrinhas {
-  
   width: 100%;
   height: 100%;
   padding: 50px 100px;
+  background-color: rgb(247, 247, 247);
   
 }
 .madrinhas-title {
@@ -13,20 +13,45 @@
   font-weight: 600;
   padding: 20px 0 100px 0;
 }
-.madrinhas-content {
+.padrinhos-title {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  font-size: 40px;
+  color: #6E6E86;
+  font-weight: 600;
+  padding: 150px 0 100px 0;
 }
+.madrinhas-content {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-row-gap: 15%;
+/* 
+display: flex;
+  justify-content: space-around;  */
+}
+.padrinhos-content {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-row-gap: 15%;
+  margin: 0 200px
+}
+
 .madrinhas-each {
   display: flex;
   flex-direction: column;
 }
 .madrinhas-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  background-color: #FFF;
+  border: 10px solid #FFF;
+  /* border-radius: 50%; */
 }
 .madrinhas-name {
-  padding-top: 40px;
+  padding: 30px 0 50px 0;
   text-align: center;
 }

@@ -1,5 +1,5 @@
 .menu--item {
-  font-family: "Poppins", "Roboto Condensed", "Acme", "Changa One";
+ 
   color: #fa6704;
   font-size: 20px;
   align-self: center;
@@ -8,7 +8,7 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   font-weight: 600;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
 }
 
 .menu--item--style:hover {
@@ -18,4 +18,5 @@
 }
 .menu-item--name {
   align-self: center;
+  font-family:"Noto Sans", "Roboto Condensed", "Acme", "Changa One";
 }
