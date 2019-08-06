@@ -8,6 +8,8 @@ import Couple from './Couple'
 import Timeline from './Timeline'
 import Counter from './Counter'
 import Madrinhas from './Madrinhas'
+import Honeymoon from './Honeymoon'
+import Banner2 from './Banner2'
 
 export default class Content extends Component {
   render() {
@@ -18,8 +20,10 @@ export default class Content extends Component {
         <Timeline />
         <Counter />
         <Local />
+        <Banner2 />
         <Madrinhas />
         <Gallery />
+        <Honeymoon />
         <RSVP />
       </div>
     )
