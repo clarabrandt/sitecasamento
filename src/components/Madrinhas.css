@@ -1,32 +1,17 @@
 .madrinhas {
   width: 100%;
   height: 100%;
-  padding: 50px 100px;
+  padding: 50px 100px 70px 100px;
   background-color: rgb(247, 247, 247);
   
 }
-.madrinhas-title {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  color: #6E6E86;
-  font-weight: 600;
-  padding: 20px 0 100px 0;
-}
-.padrinhos-title {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  color: #6E6E86;
-  font-weight: 600;
-  padding: 150px 0 100px 0;
-}
+
 .madrinhas-content {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto;
     justify-items: center;
-    grid-row-gap: 15%;
+    padding: 50px 0;
 /* 
 display: flex;
   justify-content: space-around;  */
@@ -36,8 +21,8 @@ display: flex;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: auto;
   justify-items: center;
-  grid-row-gap: 15%;
-  margin: 0 200px
+  margin: 0 130px;
+  padding: 50px 0;
 }
 
 .madrinhas-each {
@@ -52,6 +37,9 @@ display: flex;
   /* border-radius: 50%; */
 }
 .madrinhas-name {
-  padding: 30px 0 50px 0;
+  padding-top: 30px;
   text-align: center;
+  font-family:'Source Sans Pro';
+  color: #6E6E86;
+  font-size: 1.3rem;
 }

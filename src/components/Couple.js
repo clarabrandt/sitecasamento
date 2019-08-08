@@ -8,7 +8,7 @@ export default class Couple extends Component {
   render() {
     return (
       <div className='couple'>
-        <div className='couple-title'>
+        <div className='component-title'>
           <div>Nossa</div>
           <img className='heart-icon--couple' src={love} width="60" height="50" alt="Heart" />
           <div>história</div>

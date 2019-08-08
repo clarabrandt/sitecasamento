@@ -6,6 +6,7 @@ import alianca2 from './photos/alianca2.jpg'
 import civil from './photos/civil.jpg'
 import civil2 from './photos/civil2.jpg'
 import deserto from './photos/deserto.jpg'
+import sampa from './photos/Sampa.JPG'
 import Slide from 'react-reveal/Slide';
 
 
@@ -47,7 +48,7 @@ export default class Timeline extends Component {
           <Slide right>
             <div className="history-content">
               <div className='timeline-date'>31 Ago 2017</div>
-              <img className='pic--img pic-story' src={festa} height='300' width='433' alt="Party" />
+              <img className='pic--img pic-story' src={sampa} height='300' width='433' alt="Party" />
               <div className='timeline-text'> Primeira viagem do Tomás ao Rio de Janeiro. Aprovado pelos amigos da Sá, ainda fizeram uma viagem à São Paulo com as primas dela, sua irmã/cunhado/sobrinho e Tomás encontrou seu grande amigo (e padrinho) Vilhaça que morava lá!</div>
             </div>
           </Slide>
@@ -66,7 +67,7 @@ export default class Timeline extends Component {
             <div className="history-content">
               <div className='timeline-date'>21 Set 2018</div>
               <img className='pic--img pic-story' src={civil} width='300' height='433' alt="Party" />
-              <div className='timeline-text'>Nosso casamento civil foi em Lisboa, e a família da Sá veio do Brasil para celebrar com a gente. Tivemos uma recepção depois, mas ficou decidido que a festa seria no Rio!</div>
+              <div className='timeline-text'>Nosso casamento civil foi em Lisboa, e a família da Sá veio do Brasil para celebrar com a gente. Tivemos uma pequena recepção, mas ficou decidido que a festa seria no Rio!</div>
             </div>
           </Slide>
         </div>

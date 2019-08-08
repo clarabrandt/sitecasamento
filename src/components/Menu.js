@@ -3,9 +3,17 @@ import './Menu.css';
 import MenuItem from './MenuItem';
 import love from './images/love.svg'
 
-
 export default class Menu extends Component {
-
+  constructor(props) {
+    super(props)
+    this.state = {
+      sticky: true
+    }
+  }
+  // el.scrollIntoView({
+  //   behavior: 'smooth', // smooth scroll
+  //   block: 'start' // the upper border of the element will be aligned at the top of the visible part of the window of the scrollable area.
+  // })
   render() {
     return (
 

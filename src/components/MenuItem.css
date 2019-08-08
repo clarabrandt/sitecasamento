@@ -1,6 +1,6 @@
 .menu--item {
  
-  color: #fa6704;
+  color: #FF847C;
   font-size: 20px;
   align-self: center;
   display: flex;
@@ -18,5 +18,5 @@
 }
 .menu-item--name {
   align-self: center;
-  font-family:"Noto Sans", "Roboto Condensed", "Acme", "Changa One";
+  font-family:'Source Sans Pro', "Noto Sans", "Roboto Condensed", "Acme", "Changa One";
 }

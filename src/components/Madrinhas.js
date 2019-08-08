@@ -11,28 +11,31 @@ import vilaca from './photos/vilaca.jpg'
 import ashish from './photos/ashish.jpg'
 // import antonio from './photos/antonio.jpg'
 import amanda from './photos/amanda.jpg'
+import lucas from './photos/lucas.jpg'
+import davi from './photos/davi.jpg'
 import antonio2 from './photos/Antonio2.JPG'
 import joao from './photos/joao.JPG'
 import theo from './photos/theo.JPG'
+import theo2 from './photos/theo2.jpeg'
 import goncalo from './photos/goncalo.png'
 
 class Madrinhas extends Component {
   render() {
     return (
       <div className='madrinhas'>
-        <div className='madrinhas-title'>Pajem, Madrinhas, Padrinhos</div>
+        <div className='component-title'>Pajem, Madrinhas e Padrinhos</div>
         <div className='madrinhas-content'>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={theo} alt="theo" />
+            <img className='madrinhas-photo' src={theo2} alt="theo" />
             <div className='madrinhas-name'>Theo</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={theo} alt="amanda" />
-            <div className='madrinhas-name'>Theo</div>
+            <img className='madrinhas-photo' src={lucas} alt="amanda" />
+            <div className='madrinhas-name'>Lucas</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={theo} alt="antonio" />
-            <div className='madrinhas-name'>Theo</div>
+            <img className='madrinhas-photo' src={davi} alt="antonio" />
+            <div className='madrinhas-name'>Davi</div>
           </div>
         </div>
         <div div className='padrinhos-content'>
@@ -86,11 +89,11 @@ class Madrinhas extends Component {
         <div className='padrinhos-content'>
           <div className='madrinhas-each'>
             <img className='madrinhas-photo' src={fernanda} alt="fernanda" />
-            <div className='madrinhas-name'>Fernanda Brandt</div>
+            <div className='madrinhas-name'>Fernanda</div>
           </div>
           <div className='madrinhas-each'>
             <img className='madrinhas-photo' src={victor} alt="victor" />
-            <div className='madrinhas-name'>Victor Avelar</div>
+            <div className='madrinhas-name'>Victor</div>
           </div>
         </div>
       </div>

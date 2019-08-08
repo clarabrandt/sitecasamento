@@ -4,20 +4,15 @@
 }
 .rsvp-content {
   background-color: rgb(247, 247, 247);
-  padding: 50px 100px;
+  padding: 50px 100px 70px 100px;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 .rsvp-title {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  color: #6E6E86;
-  font-weight: 600;
-  padding: 20px 0 100px 0;
-
+  font-size: 60px;
 }
+
 .rsvp-form {
   width: 100%;
   justify-content: center;

@@ -7,7 +7,6 @@ export default class Banner extends Component {
     return (
       <div className='banner'>
         <div className='banner-content'>
-
           <div className='banner-text'>Sá e Tomás</div>
           <img className='heart-icon' src={love} width="40" height="40" alt="Heart" />
         </div>

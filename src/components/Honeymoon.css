@@ -8,16 +8,26 @@
  
 }
 .honeymoon-content {
-  padding: 50px 100px;
+  padding: 50px 100px 70px 100px;
   justify-content: space-around;
 }
 .honeymoon-text {
+  margin: 0 80px 30px 80px;
   text-align: center;
-  padding-bottom: 30px;
+  color: #6E6E86;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-family: 'Source Sans Pro';
 }
 .honeymoon-cards {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    justify-items: center;
+    padding: 50px 0;
+  /* display: flex;
+  justify-content: space-around; */
 }
 .honeymoon-card {
   display: flex;
@@ -29,10 +39,24 @@
 .honeymoon-card--title {
   text-align: center;
   padding: 15px;
+  color: #FF847C;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.price-text {
+  color: #6E6E86;
+  font-size: 0.9rem;
+  padding-bottom: 10px;
+}
+.price-value {
+  font-size: 1.1rem;
+  text-align: center;
 }
 .honeymoon-card--price,
 .honeymoon-card--button {
   display: flex;
   justify-content: space-around;
   padding: 10px;
+  color: #6E6E86;
+  font-size: 1.1rem;
 }

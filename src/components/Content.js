@@ -12,6 +12,7 @@ import Honeymoon from './Honeymoon'
 import Banner2 from './Banner2'
 
 export default class Content extends Component {
+
   render() {
     return (
       <div className='content'>

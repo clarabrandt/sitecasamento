@@ -16,30 +16,35 @@ const tileData = [
     title: 'Image',
     author: 'author',
     cols: 2,
+    featured: false,
   },
   {
     img: two,
     title: 'Image',
     author: 'author',
     cols: 1,
+    featured: false,
   },
   {
     img: three,
     title: 'Image',
     author: 'author',
-    cols: 1,
+    // cols: 1,
+    featured: true,
   },
   {
     img: four,
     title: 'Image',
     author: 'author',
-    cols: 2,
+    // cols: 2,
+    featured: false,
   },
   {
     img: five,
     title: 'Image',
     author: 'author',
-    cols: 2,
+    // cols: 2,
+    featured: false,
   },
   {
     img: six,
@@ -110,11 +115,11 @@ class Gallery extends Component {
     const { classes } = this.props;
     return (
       <div className='gallery'>
-        <div className='gallery-title'>Nossos momentos</div>
+        <div className='component-title'>Nossos momentos</div>
         <div className={classes.root}>
-          <GridList cellHeight={160} className={classes.gridList} cols={3}>
+          <GridList cellHeight={160} className={classes.gridList} cols={4}>
             {tileData.map(tile => (
-              <GridListTile key={tile.img} cols={tile.cols || 1}>
+              <GridListTile key={tile.img} cols={tile.featured ? 2 : 1} rows={tile.featured ? 1 : 2}>
                 <img src={tile.img} alt="foto" />
               </GridListTile>
             ))}
