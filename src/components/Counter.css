@@ -25,21 +25,24 @@
   font-family: 'Dancing Script', 'Alex Brush';
   text-align: center;
   font-size: 3.3rem; 
-  color: rgb(59, 59, 59);
+  color: #4c403d;
+  /* color: rgb(59, 59, 59); */
   font-weight: 600; 
   font-weight: 600; 
   width: 100%;
   text-shadow: 2px 2px 4px rgba(204, 204, 204);
 }
 .counter-timer {
+  font-family: 'Helvetica', sans-serif;
   display: flex;
   font-size: 4.2rem;
-  color: rgb(43, 43, 43);
-  text-shadow: 2px 2px 4px rgb(114, 114, 114);
+  color: #4c403d;
+  text-shadow: 2px 2px 4px rgb(136, 136, 136);
   align-items: baseline;
 }
 .counter-timer-text {
-  color: rgb(43, 43, 43);
+  /* color: #4c403d; */
+  color: #4c403d;
   font-size: 2.2rem;
   margin-left: 50px;
 

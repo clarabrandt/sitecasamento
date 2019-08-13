@@ -19,10 +19,24 @@
   position: relative; 
   font-family: 'Dancing Script', 'Alex Brush';
   font-size: 120px; 
-  color: white; 
+  /* color: white;  */
+  color: #eeffff; 
   /* mix-blend-mode: color-dodge; */
   position: absolute;
   top: 20%;
+  left: 50%;;
+  transform: translate(-50%, -50%);
+  font-weight: 600; 
+}
+.banner-date {
+  position: relative; 
+  font-family: 'Dancing Script', 'Alex Brush';
+  font-size: 40px; 
+  /* color: white;  */
+  color: #eeffff; 
+  /* mix-blend-mode: color-dodge; */
+  position: absolute;
+  top: 40%;
   left: 50%;;
   transform: translate(-50%, -50%);
   font-weight: 600; 
@@ -33,3 +47,4 @@
   left: 50%;;
   transform: translate(-50%, -50%);
 }
+

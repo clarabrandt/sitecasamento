@@ -1,6 +1,6 @@
 .menu--item {
  
-  color: #FF847C;
+  color: #557777;
   font-size: 20px;
   align-self: center;
   display: flex;
@@ -12,7 +12,7 @@
 }
 
 .menu--item--style:hover {
-  background-color: #f5ceb4;
+  text-decoration: underline;
   cursor: pointer;
   font-weight: 700;
 }

@@ -6,8 +6,7 @@
 .component-title {
   display: flex;
   justify-content: center;
-  /* color: #6E6E86; */
-  color: #FF847C;
+  color: #ee8166de;
   font-size: 70px;
   font-weight: 400;
   padding: 20px 0 100px 0;
