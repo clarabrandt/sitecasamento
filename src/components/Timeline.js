@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import './Timeline.css'
 import festa from './images/festa.jpg'
-import alianca from './photos/alianca.jpg'
-import alianca2 from './photos/alianca2.jpg'
-import civil from './photos/civil.jpg'
-import civil2 from './photos/civil2.jpg'
-import deserto from './photos/deserto.jpg'
+import alianca from './photos/timeline/alianca.jpg'
+import civil from './photos/timeline/civil.jpg'
+
+import camelo from './photos/timeline/camelo.jpeg'
+import cristo from './photos/timeline/cristo.jpeg'
 import sampa from './photos/Sampa.JPG'
 import Slide from 'react-reveal/Slide';
 
@@ -31,7 +31,7 @@ export default class Timeline extends Component {
             <div className="history-content">
               <div className='timeline-date'>27 Jan 2017</div>
               <img className='pic--img pic-story' src={festa} height='300' width='433' alt="Party" />
-              <div className='timeline-text'>Nossa primeira viagem juntos foi pra Alcobaça, ao norte de Lisboa.</div>
+              <div className='timeline-text'>Nossa primeira viagem juntos foi pra Alcobaça, ao norte de Lisboa. Mal sabíamos que seria a primeira de muuuuitas!</div>
             </div>
           </Slide>
         </div>
@@ -39,8 +39,7 @@ export default class Timeline extends Component {
           <Slide left>
             <div className="history-content">
               <div className='timeline-date date-left'>01 Mai 2017</div>
-              <img className='pic--img pic-story' src={festa} height='300' width='433' alt="Party" />
-              <div className='timeline-text'>Estávamos juntos há um mês e meio (em fevereiro) quando o Tomás recebeu a proposta de emprego Amazon e, em maio, se mudou pra Luxemburgo. Em junho a Sá vou visitá-lo, e em julho se mudou para a casa que dividiriam pelo próximo ano.</div>
+              <div className='timeline-text'>Estávamos juntos há um mês e meio (em fevereiro) quando o Tomás recebeu a proposta de emprego da Amazon e, em maio, se mudou pra Luxemburgo. Em junho a Sá foi visitá-lo, e em julho se mudou para a casa que dividiriam pelo próximo ano.</div>
             </div>
           </Slide>
         </div>
@@ -48,7 +47,7 @@ export default class Timeline extends Component {
           <Slide right>
             <div className="history-content">
               <div className='timeline-date'>31 Ago 2017</div>
-              <img className='pic--img pic-story' src={sampa} height='300' width='433' alt="Party" />
+              <img className='pic--img pic-story' src={cristo} height='433' width='320' alt="Party" />
               <div className='timeline-text'> Primeira viagem do Tomás ao Rio de Janeiro. Aprovado pelos amigos da Sá, ainda fizeram uma viagem à São Paulo com as primas dela, sua irmã/cunhado/sobrinho e Tomás encontrou seu grande amigo (e padrinho) Vilhaça que morava lá!</div>
             </div>
           </Slide>
@@ -75,7 +74,7 @@ export default class Timeline extends Component {
           <Slide left>
             <div className="history-content">
               <div className='timeline-date date-left'> 01 Outubro 2018</div>
-              <img className='pic--img pic-story' src={deserto} width='300' height='433' alt="Party" />
+              <img className='pic--img pic-story' src={camelo} width='433' height='390' alt="Party" />
               <div className='timeline-text'>Nos mudamos para Dubai. Durou pouco, apenas dois meses, mas foi uma experiência engrandecedora. Pudemos viajar por ali e conhecer um pouco mais sobre a cultura local quando a família do Tomás foi nos visitar.</div>
             </div>
           </Slide>
