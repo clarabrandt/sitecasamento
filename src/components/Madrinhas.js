@@ -1,23 +1,20 @@
 import React, { Component } from 'react';
 import './Madrinhas.css'
-import clara from './photos/eu.jpg'
-import bianca from './photos/bianca.jpg'
-import larise from './photos/larise.jpg'
-import filipa from './photos/filipa.jpg'
-// import fe from './photos/fe.jpg'
-import fernanda from './photos/fernanda.jpeg'
-import victor from './photos/victor.jpg'
-import vilaca from './photos/vilaca.jpg'
-import ashish from './photos/ashish.jpg'
-// import antonio from './photos/antonio.jpg'
-import amanda from './photos/amanda.jpg'
-import lucas from './photos/lucas.jpg'
-import davi from './photos/davi.jpg'
-import antonio2 from './photos/Antonio2.JPG'
-import joao from './photos/joao.JPG'
-import theo from './photos/theo.JPG'
-import theo2 from './photos/theo2.jpeg'
-import goncalo from './photos/goncalo.png'
+import clara from './photos/madrinhas/eu.jpg'
+import bianca from './photos/madrinhas/bianca.jpg'
+import larise from './photos/madrinhas/larise.jpg'
+import filipa from './photos/madrinhas/filipa.jpg'
+import fernanda from './photos/madrinhas/fernanda.jpeg'
+import victor from './photos/padrinhos/victor.jpg'
+import vilaca from './photos/padrinhos/vilaca.jpg'
+import ashish from './photos/padrinhos/ashish.jpg'
+import amanda from './photos/madrinhas/amanda.jpg'
+import lucas from './photos/pajens/lucas.jpg'
+import davi from './photos/pajens/davi.jpg'
+import antonio2 from './photos/padrinhos/Antonio2.JPG'
+import joao from './photos/padrinhos/joao.JPG'
+import theo2 from './photos/pajens/theo2.jpeg'
+import goncalo from './photos/padrinhos/goncalo.png'
 
 class Madrinhas extends Component {
   render() {
@@ -75,7 +72,7 @@ class Madrinhas extends Component {
         <div className='madrinhas-content'>
           <div className='madrinhas-each'>
             <img className='madrinhas-photo' src={goncalo} alt="gonçalo" />
-            <div className='madrinhas-name'>Gonçalo</div>
+            <div className='padrinhos-name'>Gonçalo</div>
           </div>
           <div className='madrinhas-each'>
             <img className='madrinhas-photo' src={larise} alt="antonio" />
@@ -83,7 +80,7 @@ class Madrinhas extends Component {
           </div>
           <div className='madrinhas-each'>
             <img className='madrinhas-photo' src={vilaca} alt="clara" />
-            <div className='madrinhas-name'>Vilaça</div>
+            <div className='padrinhos-name'>Vilaça</div>
           </div>
         </div>
         <div className='padrinhos-content'>
