@@ -3,7 +3,6 @@
     height: 100vh;
     position: relative;
     background: url("./photos/pedido.jpg");
-    /* background: url("./photos/pedidotrim.jpg"); */
     background-attachment: scroll;
     background-size: cover;
 }
@@ -18,10 +17,8 @@
 .banner-text {
   position: relative; 
   font-family: 'Dancing Script', 'Alex Brush';
-  font-size: 120px; 
-  /* color: white;  */
+  font-size: 7.5rem; 
   color: #eeffff; 
-  /* mix-blend-mode: color-dodge; */
   position: absolute;
   top: 20%;
   left: 50%;;
@@ -31,10 +28,8 @@
 .banner-date {
   position: relative; 
   font-family: 'Dancing Script', 'Alex Brush';
-  font-size: 40px; 
-  /* color: white;  */
+  font-size: 2.5rem; 
   color: #eeffff; 
-  /* mix-blend-mode: color-dodge; */
   position: absolute;
   top: 40%;
   left: 50%;;
@@ -48,3 +43,83 @@
   transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 1024px) {
+  .banner {
+    width: 100%;
+    background-position: 50% 75%;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+  .banner-text {
+    font-size: 5.9rem;
+    top: 20%;
+    left: 50%;
+  }
+
+  .banner-date {
+    font-size: 2rem;
+    top: 35%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .banner {
+    width: 100%;
+    background-position: 50% 75%;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+  .banner-text {
+    font-size: 5.9rem;
+    top: 20%;
+    left: 50%;
+  }
+
+  .banner-date {
+    font-size: 2rem;
+    top: 35%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .banner {
+    width: 100%;
+    background-position: 50% 75%;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+  .banner-text {
+    font-size: 46px;
+    top: 15%;
+    left: 50%;
+  }
+
+  .banner-date {
+    font-size: 25px;
+    top: 30%;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .banner {
+    width: 100%;
+    background-position: 50% 75%;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+  .banner-text {
+    font-size: 2.4rem;
+    top: 15%;
+    left: 50%;
+  }
+
+  .banner-date {
+    font-size: 1.3rem;
+    top: 30%;
+    left: 50%;
+  }
+}
