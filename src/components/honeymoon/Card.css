@@ -1,0 +1,18 @@
+.honeymoon-card--pic {
+  width: 300px;
+  height: 250px;
+}
+
+@media only screen and (max-width: 620px) {
+  .honeymoon-card--pic {
+    width: 250px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .honeymoon-card--pic {
+    width: 250px;
+    height: 200px;
+  }
+ 
+}

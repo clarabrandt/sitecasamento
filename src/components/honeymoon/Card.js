@@ -2,8 +2,13 @@ import React, { Component } from 'react'
 import Button from '@material-ui/core/Button';
 import { green, red } from '@material-ui/core/colors';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import './Card.css'
+
+
+
 
 export default class Card extends Component {
+
   theme = createMuiTheme({
     palette: {
       primary: {
@@ -24,9 +29,10 @@ export default class Card extends Component {
   });
 
   render() {
+
     return (
       <div className='honeymoon-card'>
-        <img className='honeymoon-card--pic' src={this.props.photo} alt='safari' width='300px' height='250px' />
+        <img className='honeymoon-card--pic' src={this.props.photo} alt='safari' />
         <div className='honeymoon-card--title'>{this.props.title}</div>
         <div className='honeymoon-card--price'>
           <div className='price-euro'>
@@ -40,8 +46,15 @@ export default class Card extends Component {
         </div>
         <MuiThemeProvider theme={this.theme}>
           <div className='honeymoon-card--button'>
-            <Button variant="contained" size='small'>comprar</Button>
-            <Button variant="contained" size='small'>comprar</Button>
+
+            <Button variant="contained" size='small' >
+              comprar
+
+            </Button>
+            <Button variant="contained" size='small'>
+              comprar
+
+            </Button>
           </div>
         </MuiThemeProvider>
       </div>
