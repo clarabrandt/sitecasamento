@@ -4,7 +4,7 @@ import './Local.css'
 import rings from './images/rings.svg'
 import glasses from './images/glasses.svg'
 import igreja from './images/igreja.jpg'
-import festa from './images/festa.jpg'
+import festa from './images/festa1.jpg'
 
 
 

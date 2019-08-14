@@ -3,7 +3,6 @@
     height: 100vh;
     position: relative;
     background: url("./photos/pedido.jpg");
-    background-attachment: scroll;
     background-size: cover;
 }
 .banner-content {
@@ -48,7 +47,7 @@
     width: 100%;
     background-position: 50% 75%;
     background-size: cover;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .banner-text {
@@ -68,7 +67,7 @@
     width: 100%;
     background-position: 50% 75%;
     background-size: cover;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .banner-text {
@@ -88,7 +87,7 @@
     width: 100%;
     background-position: 50% 75%;
     background-size: cover;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .banner-text {
@@ -108,7 +107,7 @@
     width: 100%;
     background-position: 50% 75%;
     background-size: cover;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .banner-text {
