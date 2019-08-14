@@ -22,7 +22,6 @@ export default class Local extends Component {
                 <div className='local-banner--title-icon'><img src={rings} alt="Heart" /></div>
               </div>
             </div>
-
             <div className='pic'>
               <img className='pic--img' src={igreja} height='300' width='300' alt="Church" />
             </div>
