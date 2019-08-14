@@ -6,3 +6,39 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 1024px) {
+  .honeymoon-banner2 {
+    width: 100%;
+    background-position: 50% 75%;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+}
+@media only screen and (max-width: 780px) {
+  .honeymoon-banner2 {
+    width: 100%;
+    background-position: 50% 75%;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+}
+@media only screen and (max-width: 620px) {
+  .honeymoon-banner2 {
+    width: 100%;
+    background-position: 50% 75%;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+}
+@media only screen and (max-width: 330px) {
+  .honeymoon-banner2 {
+    width: 100%;
+    background-position: 50% 75%;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+}
