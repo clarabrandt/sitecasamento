@@ -7,16 +7,38 @@
   width: 100%;
   background-color: white;
   justify-content: center;
-  padding: 15px 0;
+  padding: 10px 0;
   
 }
 .menu.sticky {
-  position: fixed;
-  background-color: rgb(9, 8, 24);
-  opacity: 0.9;
+  position: sticky;
+  background-color: white;
+  /* opacity: 0.9; */
   transition: 1s;
-  z-index: 10;
+  z-index: 9999;
+  top: 0
 }
 .heart-icon--menu{
   align-self: center;
+}
+
+
+@media only screen and (max-width: 780px) {
+  .heart-icon--menu{
+    /* display: none; */
+  }
+  .menu {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 620px) {
+ 
+  .menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .menu {
+    display: none;
+  }
 }

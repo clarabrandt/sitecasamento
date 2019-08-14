@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import './Menu.css';
 import MenuItem from './MenuItem';
@@ -16,7 +17,6 @@ export default class Menu extends Component {
   // })
   render() {
     return (
-
       <div className={`menu ${this.props.sticky ? 'sticky' : 'notSticky'}`} >
         <MenuItem name='Home' anchor='home' />
         <img className='heart-icon--menu' src={love} width="8" height="8" alt="Heart" />

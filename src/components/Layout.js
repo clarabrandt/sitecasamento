@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "./Layout.css";
 import Banner from './Banner'
 import Content from './Content'
+import Menu from './Menu'
 
 class Layout extends Component {
 
@@ -9,6 +10,7 @@ class Layout extends Component {
     return (
       <div className='layout'>
         <Banner />
+        <Menu />
         <Content />
       </div>
     )
