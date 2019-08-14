@@ -46,7 +46,7 @@ export default class Counter extends Component {
         <div className='counter-content'>
           <div className='counter-text'>E agora estamos contando os dias para comemorar com vocês! </div>
           <div className='counter-timer'>
-            <div>{this.state.days} dias </div>
+            <div className='counter-timer-day'>{this.state.days} dias </div>
             <div className='counter-timer-text'>{this.state.hours} horas {this.state.minutes} minutos {this.state.seconds} segundos</div>
           </div>
         </div>
