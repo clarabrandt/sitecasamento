@@ -14,7 +14,7 @@ class Modal extends React.Component {
               <div className="modal__header">
                 <div className="modal__title" />
                 <div className="modal__close" onClick={toggleFn}>
-                  x
+                  X
                 </div>
               </div>
               <div className="modal__body">{children}</div>
