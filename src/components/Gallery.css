@@ -44,4 +44,47 @@
   height: 100%;
   object-fit: cover;
 } */
+.gridList {
+  display: none
+}
+@media only screen and (max-width: 1024px) {
+  .gallery {
+    width: 100%;
+    padding: 50px 20px 70px 20px;
+  }
 
+}
+@media only screen and (max-width: 780px) {
+  .gallery {
+    width: 100%;
+    padding: 50px 20px 70px 20px;
+  }
+
+}
+@media only screen and (max-width: 620px) {
+  .gallery {
+    width: 100%;
+    padding: 50px 20px 70px 20px;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    object-fit: cover;
+  }
+
+}
+@media only screen and (max-width: 330px) {
+  .gallery {
+    width: 100%;
+    padding: 50px 20px 70px 20px;
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    object-fit: cover;
+  }
+}
