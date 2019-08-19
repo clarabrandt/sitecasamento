@@ -5,12 +5,10 @@ import GridListTile from '@material-ui/core/GridListTile';
 import { withStyles } from '@material-ui/core/styles';
 import one from './photos/gallery/SaeTomas1.jpg'
 import brinde from './photos/gallery/SaeTomas2.jpg'
-import praia from './photos/gallery/saetomas_praia.jpg'
 import natal from './photos/gallery/SaeTomas3.jpeg'
 import risada from './photos/gallery/risada.jpeg'
 import paris from './photos/gallery/paris.jpeg'
 import boca from './photos/gallery/boca.jpeg'
-import bruxelas from './photos/gallery/bruxelas.jpeg'
 import susto from './photos/gallery/SaeTomas6.jpeg'
 import oculos from './photos/gallery/oculos.jpeg'
 import eles from './photos/gallery/eles.jpeg'
@@ -22,14 +20,13 @@ import alianca from './photos/gallery/alianca2.jpg'
 import lux from './photos/gallery/lux.jpg'
 import close from './photos/gallery/close.jpg'
 import londres from './photos/gallery/londres.jpg'
-import rena from './photos/gallery/rena.jpg'
 import vinho from './photos/gallery/vinho.jpg'
 import deserto from './photos/timeline/deserto.jpg'
-import casorio from './photos/gallery/casorio.jpg'
 import casorio2 from './photos/gallery/casorio2.jpg'
 import dubai from './photos/gallery/dubai.jpg'
 import coracao from './photos/gallery/SaeTomas5.jpeg'
 import Modal from './Modal'
+import { NONAME } from 'dns';
 
 const tileData = [
   {
@@ -198,8 +195,7 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.paper,
   },
   // gridList: {
-  //   width: 800,
-  //   height: 650,
+  //   display: 'none',
   //   overflow: 'hidden'
   // },
 });
@@ -209,25 +205,45 @@ class Gallery extends Component {
     super(props);
 
     this.state = {
-      modalOpen: false
+      modalOpen: false,
+      selectedPicture: null,
+      isSmall: false,
+      isMedium: false,
+      isBig: false,
     };
 
     this.toggleModal = this.toggleModal.bind(this);
     this.renderModal = this.renderModal.bind(this);
   }
 
+  componentDidMount() {
+    window.addEventListener("resize", this.resize.bind(this));
+    this.resize();
+  }
+
+  resize() {
+    let screenSize = window.innerWidth;
+
+    this.setState({
+      isBig: screenSize >= 780,
+      isMedium: 780 >= screenSize && screenSize >= 620,
+      isSmall: 620 >= screenSize && screenSize >= 330
+    });
+  }
+
   renderModal() {
     return (
       <Modal toggleFn={this.toggleModal} isOpen={this.state.modalOpen}>
-        <img src={tileData.img} alt='' />
+        <img src={tileData.img} width='500' height='400' alt='' />
       </Modal>
+
     );
   };
 
-  toggleModal(picture) {
+  toggleModal() {
     this.setState(prevState => ({
       modalOpen: !prevState.modalOpen,
-      selectedPicture: picture,
+      selectedPicture: tileData.img,
     }));
   };
 
@@ -238,24 +254,30 @@ class Gallery extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className='gallery'>
+      <div className='gallery' ref={this.props.galeria}>
         <div className='component-title'>Nossos momentos</div>
-        <div className={classes.root}>
-          <GridList cellHeight={170} className='gridList' cols={4}>
-            {tileData.map(tile => (
-              <GridListTile className='gallery-item gallery-img' key={tile.img} cols={tile.cols ? 2 : 1} rows={tile.rows ? 2 : 1}>
-                <img src={tile.img} alt="foto" />
-              </GridListTile>
-            ))}
-          </GridList>
-        </div>
-        {/*<div className='gallery-grid'>
-          <img className='gallery-item gallery-item--1 gallery-img' src={one} alt="couple" onClick={() => this.toggleModal(one)} />
-          <img className='gallery-item gallery-item--2 gallery-img' src={brinde} alt="couple" onClick={() => this.toggleModal(brinde)} />
-          <img className='gallery-item gallery-item--3 gallery-img' src={natal} alt="couple" onClick={() => this.toggleModal(three)} />
-          <img className='gallery-item gallery-item--4 gallery-img' src={four} alt="couple" onClick={() => this.toggleModal(four)} />
-          <img className='gallery-item gallery-item--5 gallery-img' src={five} alt="couple" onClick={() => this.toggleModal(five)} />
-    </div>*/}
+        {this.state.isBig &&
+          <div className={classes.root}>
+            <GridList cellHeight={170} className='gridList' cols={4}>
+              {tileData.map(tile => (
+                <GridListTile className='gallery-item gallery-img' key={tile.img} cols={tile.cols ? 2 : 1} rows={tile.rows ? 2 : 1}>
+                  <img src={tile.img} alt="foto" onClick={() => this.toggleModal()} />
+                </GridListTile>
+              ))}
+            </GridList>
+          </div>
+        }
+        {this.state.isMedium &&
+          <div className={classes.root}>
+            <GridList cellHeight={150} className='gridList' cols={1}>
+              {tileData.map(tile => (
+                <GridListTile className='gallery-item gallery-img' key={tile.img} cols={tile.cols} rows={tile.rows ? 2 : 2}>
+                  <img src={tile.img} alt="foto" onClick={() => this.toggleModal()} />
+                </GridListTile>
+              ))}
+            </GridList>
+          </div>
+        }
         {this.renderModal()}
       </div>
     )

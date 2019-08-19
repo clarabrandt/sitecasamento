@@ -19,7 +19,7 @@ import goncalo from './photos/padrinhos/goncalo.png'
 class Madrinhas extends Component {
   render() {
     return (
-      <div className='madrinhas'>
+      <div className='madrinhas' ref={this.props.madrinhas}>
         <div className='component-title'>Pajem, Madrinhas e Padrinhos</div>
         <div className='madrinhas-content'>
           <div className='madrinhas-each'>

@@ -42,7 +42,7 @@ export default class Couple extends Component {
 
   render() {
     return (
-      <div className='couple'>
+      <div className='couple' ref={this.props.casal}>
         <div className='component-title'>
           <div>Nossa história</div>
         </div>

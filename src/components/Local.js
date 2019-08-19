@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './Local.css'
 // import love from './images/love.svg'
-import rings from './images/rings.svg'
-import glasses from './images/glasses.svg'
+import rings from './svg/rings.svg'
+import glasses from './svg/glasses.svg'
 import igreja from './images/igreja.jpg'
 import festa from './images/festa1.jpg'
 
@@ -11,7 +11,7 @@ import festa from './images/festa1.jpg'
 export default class Local extends Component {
   render() {
     return (
-      <div className='local'>
+      <div className='local' ref={this.props.local}>
         <div className='component-title'>Data e Local</div>
         <div className='local-text'>O casamento será no dia 04 de janeiro de 2020, às 18 horas, na Igreja Santa Margarida Maria, seguido pela festa no Solar das Palmeiras.</div>
         <div className='local-content'>

@@ -24,7 +24,7 @@ export default class Honeymoon extends Component {
   });
   render() {
     return (
-      <div className='honeymoon'>
+      <div className='honeymoon' ref={this.props.honeymoon}>
         <img className='honeymoon-banner' src={africa3} alt='safari' />
         <div className='honeymoon-content'>
           <div className='component-title'>Presentes</div>
