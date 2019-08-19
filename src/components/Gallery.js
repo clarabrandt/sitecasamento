@@ -201,15 +201,11 @@ class Gallery extends Component {
     super(props);
 
     this.state = {
-      modalOpen: false,
-      selectedPicture: null,
       isSmall: false,
       isMedium: false,
       isBig: false,
     };
 
-    this.toggleModal = this.toggleModal.bind(this);
-    this.renderModal = this.renderModal.bind(this);
   }
 
   componentDidMount() {

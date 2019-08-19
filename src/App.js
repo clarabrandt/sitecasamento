@@ -14,9 +14,9 @@ class App extends Component {
         <BrowserRouter>
           <Switch>
             <Route path="/home" component={Layout} />
-            <Route path="/madrinhas" component={Madrinhas} />
-            <Route path="/local" component={Local} />
-            <Route path="/galeria" component={Gallery} />
+            {/*<Route path="/madrinhas" component={Madrinhas} />
+              <Route path="/local" component={Local} />
+              <Route path="/galeria" component={Gallery} />*/}
           </Switch>
         </BrowserRouter>
       </div>
