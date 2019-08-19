@@ -194,10 +194,6 @@ const styles = theme => ({
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
   },
-  // gridList: {
-  //   display: 'none',
-  //   overflow: 'hidden'
-  // },
 });
 
 class Gallery extends Component {
@@ -231,26 +227,6 @@ class Gallery extends Component {
     });
   }
 
-  renderModal() {
-    return (
-      <Modal toggleFn={this.toggleModal} isOpen={this.state.modalOpen}>
-        <img src={tileData.img} width='500' height='400' alt='' />
-      </Modal>
-
-    );
-  };
-
-  toggleModal() {
-    this.setState(prevState => ({
-      modalOpen: !prevState.modalOpen,
-      selectedPicture: tileData.img,
-    }));
-  };
-
-  jalapenho = () => {
-    return this.toggleModal
-  }
-
   render() {
     const { classes } = this.props;
     return (
@@ -261,7 +237,7 @@ class Gallery extends Component {
             <GridList cellHeight={170} className='gridList' cols={4}>
               {tileData.map(tile => (
                 <GridListTile className='gallery-item gallery-img' key={tile.img} cols={tile.cols ? 2 : 1} rows={tile.rows ? 2 : 1}>
-                  <img src={tile.img} alt="foto" onClick={() => this.toggleModal()} />
+                  <img src={tile.img} alt="foto" />
                 </GridListTile>
               ))}
             </GridList>
@@ -272,19 +248,15 @@ class Gallery extends Component {
             <GridList cellHeight={150} className='gridList' cols={1}>
               {tileData.map(tile => (
                 <GridListTile className='gallery-item gallery-img' key={tile.img} cols={tile.cols} rows={tile.rows ? 2 : 2}>
-                  <img src={tile.img} alt="foto" onClick={() => this.toggleModal()} />
+                  <img src={tile.img} alt="foto" />
                 </GridListTile>
               ))}
             </GridList>
           </div>
         }
-        {this.renderModal()}
       </div>
     )
   }
 }
-// Gallery.propTypes = {
-//   classes: PropTypes.object.isRequired,
-// };
 
 export default withStyles(styles)(Gallery);
