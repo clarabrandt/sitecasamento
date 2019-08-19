@@ -17,13 +17,12 @@ class Layout extends Component {
   }
 
 
-handleClick(clicked) {
-  this.setState({
-    clicked
-  });
-  
+  handleClick(clicked) {
+    this.setState({
+      clicked
+    });
 
-
+  }
   render() {
     return (
       <div className='layout'>

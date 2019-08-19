@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "./Banner.css"
-import love from './images/love.svg'
+
 
 export default class Banner extends Component {
   render() {
