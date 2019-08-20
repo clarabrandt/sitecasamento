@@ -19,12 +19,6 @@
   object-fit: cover;
 }
 
-.gallery-img:hover {
-  cursor: pointer;
-}
-.gallery-modal {
-  display: none;
-}
 
 .close {
   color: #aaaaaa;

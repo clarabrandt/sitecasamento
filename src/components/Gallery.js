@@ -25,7 +25,6 @@ import deserto from './photos/timeline/deserto.jpg'
 import casorio2 from './photos/gallery/casorio2.jpg'
 import dubai from './photos/gallery/dubai.jpg'
 import coracao from './photos/gallery/SaeTomas5.jpeg'
-import Modal from './Modal'
 import { NONAME } from 'dns';
 
 const tileData = [
