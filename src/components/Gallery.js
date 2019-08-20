@@ -216,9 +216,9 @@ class Gallery extends Component {
     let screenSize = window.innerWidth;
 
     this.setState({
-      isBig: screenSize >= 780,
-      isMedium: 780 >= screenSize && screenSize >= 620,
-      isSmall: 620 >= screenSize && screenSize >= 330
+      isBig: 1020 >= screenSize && screenSize >= 765,
+      isMedium: 765 >= screenSize && screenSize >= 414,
+      isSmall: 375 >= screenSize && screenSize >= 320
     });
   }
 
@@ -240,9 +240,20 @@ class Gallery extends Component {
         }
         {this.state.isMedium &&
           <div className={classes.root}>
-            <GridList cellHeight={150} className='gridList' cols={1}>
+            <GridList cellHeight={200} className='gridList' cols={1}>
               {tileData.map(tile => (
-                <GridListTile className='gallery-item gallery-img' key={tile.img} cols={tile.cols} rows={tile.rows ? 2 : 2}>
+                <GridListTile className='gallery-item gallery-img' key={tile.img} cols={tile.cols ? 1 : 1} rows={tile.rows ? 2 : 2}>
+                  <img src={tile.img} alt="foto" />
+                </GridListTile>
+              ))}
+            </GridList>
+          </div>
+        }
+        {this.state.isSmall &&
+          <div className={classes.root}>
+            <GridList cellHeight={300} className='gridList' cols={1}>
+              {tileData.map(tile => (
+                <GridListTile className='gallery-item gallery-img' key={tile.img} cols={tile.cols ? 1 : 1} rows={tile.rows ? 1 : 1}>
                   <img src={tile.img} alt="foto" />
                 </GridListTile>
               ))}
