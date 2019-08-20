@@ -33,17 +33,17 @@ export default class Honeymoon extends Component {
           <div className='honeymoon-text'>Como forma de nos presentear, além da presença de vocês, é possível colaborar com nossa lua-de-mel, que acontecerá futuramente na África!</div>
           <div className='honeymoon-cards'>
             <Card title="Passagens aéreas" photo={plane1} number={10} numero={20} euro={120} real={300} />
-            <Card title="Diárias de hotel em Joanesburgo" photo={hotel1} number={5} numero={20} euro={150} real={150} />
+            <Card title="Diárias de hotel" photo={hotel1} number={5} numero={20} euro={150} real={150} />
             <Card title="Safari" photo={safari} number={4} numero={10} euro={40} real={80} />
             <Card title="Jantar na savana para 2" photo={jantar1} number={5} numero={10} euro={40} real={100} />
             <Card title="Degustação de vinhos" photo={hotel1} number={3} numero={10} euro={50} real={75} />
-            <Card title="Bungee Jump Bloukrans Bridge" photo={bungee} number={5} numero={10} euro={40} real={100} />
+            <Card title="Bungee Jump" photo={bungee} number={5} numero={10} euro={40} real={100} />
             <Card title="Jantar na savana para 2" photo={jantar1} number={3} numero={10} euro={40} real={100} />
-            <Card title="Diária de hotel em Cape Town" photo={hotel1} number={5} numero={5} euro={50} real={150} />
+            <Card title="Diária de hotel" photo={hotel1} number={5} numero={5} euro={50} real={150} />
             <Card title="Aluguel de carro" photo={car} number={10} numero={10} euro={50} real={200} />
-            <Card title="Mergulho na jaula com tubarões" photo={tubarao1} number={5} numero={10} euro={60} real={120} />
-            <Card title="Ida ao Cabo da Boa Esperança" photo={cabo} number={4} numero={10} euro={40} real={80} />
-            <Card title="Diárias de hotel Cidade do Cabo" photo={safari} number={5} numero={150} euro={20} real={150} />
+            <Card title="Mergulho com tubarões" photo={tubarao1} number={5} numero={10} euro={60} real={120} />
+            <Card title="Cabo da Boa Esperança" photo={cabo} number={4} numero={10} euro={40} real={80} />
+            <Card title="Diárias de hotel" photo={safari} number={5} numero={150} euro={20} real={150} />
           </div>
           <div>
 
