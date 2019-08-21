@@ -67,18 +67,6 @@ export default class Content extends Component {
   }
 
 
-
-  // onScroll() {
-  //   const isTop =
-  //     this.layout.current.scrollTop === null ||
-  //       this.layout.current.scrollTop <= 0
-  //       ? false
-  //       : true;
-  //   this.setState({
-  //     sticky: isTop
-  //   });
-  // }
-
   render() {
     return (
       <div className='content'>

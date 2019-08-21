@@ -3,10 +3,8 @@ import './Timeline.css'
 import festa from './images/festa.jpg'
 import alianca from './photos/timeline/alianca.jpg'
 import civil from './photos/timeline/civil.jpg'
-
 import camelo from './photos/timeline/camelo.jpeg'
 import cristo from './photos/timeline/cristo.jpeg'
-import sampa from './photos/Sampa.JPG'
 import Slide from 'react-reveal/Slide';
 
 

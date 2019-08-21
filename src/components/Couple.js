@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import './Couple.css'
 import Modal from './Modal'
-import sa from './photos/casal/Sa.jpg'
-import tomas2 from './photos/casal/Tomas2.jpg'
 import sa2 from './photos/casal/pic_grande_sa.jpeg'
 import tomas3 from './photos/casal/pic_grande_tomas.jpeg'
 import saetomas from './photos/casal/pic_grande.jpeg'
