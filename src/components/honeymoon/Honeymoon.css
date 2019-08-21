@@ -81,13 +81,21 @@
     grid-template-columns: repeat(2, auto);
   }
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 414px) {
   .honeymoon-text {
+    padding-bottom: 3rem;
     margin: 0 10px;
     text-align: justify;
   }
   .honeymoon-content {
     padding: 50px 10px 70px 10px; 
+  }
+  .honeymoon-cards {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: auto;
+    justify-items: center;
+    row-gap: 5rem;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -105,9 +113,9 @@
   .honeymoon-cards {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    row-gap: 0;
-    grid-row-gap: 0;
-    max-width: 200px;
+    grid-template-rows: auto;
+    row-gap: 5rem;
+    grid-row-gap: 3rem;
   }
   .honeymoon-card--title {
     font-size: 0.9rem;
