@@ -25,6 +25,8 @@ export default class Content extends Component {
     this.madrinhas = React.createRef();
     this.honeymoon = React.createRef();
     this.rsvp = React.createRef();
+    this.top = React.createRef();
+   
 
 
     this.goToComponent = this.goToComponent.bind(this);
@@ -78,7 +80,7 @@ export default class Content extends Component {
         <Madrinhas madrinhas={this.madrinhas} handleClick={this.handleClick} />
         <Gallery galeria={this.galeria} handleClick={this.handleClick} />
         <Honeymoon honeymoon={this.honeymoon} handleClick={this.handleClick} />
-        <RSVP rsvp={this.rsvp} handleClick={this.handleClick} />
+        <RSVP rsvp={this.rsvp} goToTop={this.goToTop} />
       </div>
     )
   }

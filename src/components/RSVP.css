@@ -3,9 +3,9 @@
   height: 100%;
 }
 .rsvp-content {
+  display: flex;
   background-color: rgb(247, 247, 247);
   padding: 50px 100px 70px 100px;
-  display: flex;
   flex-direction: column;
   height: 100%;
 }
@@ -18,14 +18,31 @@
   justify-content: center;
 }
 .foot {
-  background-color: #f0947dde;
   display: flex;
+  justify-content: space-between;
+  background-color: #f0947dde;
   color: #4c403d;
   padding: 20px;
   height: 70px;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
 }
+.arrow {
+  display: flex;
+}
+.arrow-top--draw {
+  margin: 0 0 5px 40px;
+  width: 20px;
+  height: 20px;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  transform: rotate(225deg);
+  z-index: 1;
+}
+.arrow-text {
+  margin-left: 10px
+}
+
 
 @media only screen and (max-width: 1024px) {
   .rsvp-content {

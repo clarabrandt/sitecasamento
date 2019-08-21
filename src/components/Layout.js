@@ -13,9 +13,27 @@ class Layout extends Component {
     };
 
     this.handleClick = this.handleClick.bind(this);
-
+    this.goToTop = this.goToTop.bind(this);
+    this.smoothScroll = this.smoothScroll.bind(this);
+    this.top = React.createRef();
   }
 
+  componentDidUpdate() {
+    this.goToTop()()
+  }
+  
+  smoothScroll(clicked) {
+    clicked.current.scrollIntoView({
+      block: "start",
+      behavior: "smooth"
+    });
+  }
+
+  goToTop() {
+    if (this.props.clicked === "arrow") {
+      this.smoothScroll(this.top);
+    }
+  }
 
   handleClick(clicked) {
     this.setState({
@@ -25,10 +43,10 @@ class Layout extends Component {
   }
   render() {
     return (
-      <div className='layout'>
+      <div className='layout' ref={this.top}>
         <Banner />
         <Menu handleClick={this.handleClick} />
-        <Content clicked={this.state.clicked} />
+        <Content clicked={this.state.clicked} goToTop={this.goToTop}/>
       </div>
     )
   }
