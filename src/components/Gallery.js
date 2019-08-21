@@ -216,6 +216,7 @@ class Gallery extends Component {
     let screenSize = window.innerWidth;
 
     this.setState({
+      isHuge: screenSize >= 1021,
       isBig: 1020 >= screenSize && screenSize >= 765,
       isMedium: 765 >= screenSize && screenSize >= 414,
       isSmall: 375 >= screenSize && screenSize >= 320
@@ -227,6 +228,17 @@ class Gallery extends Component {
     return (
       <div className='gallery' ref={this.props.galeria}>
         <div className='component-title'>Nossos momentos</div>
+        {this.state.isHuge &&
+          <div className={classes.root}>
+            <GridList cellHeight={170} className='gridList' cols={4}>
+              {tileData.map(tile => (
+                <GridListTile className='gallery-item gallery-img' key={tile.img} cols={tile.cols ? 2 : 1} rows={tile.rows ? 2 : 1}>
+                  <img src={tile.img} alt="foto" />
+                </GridListTile>
+              ))}
+            </GridList>
+          </div>
+        }
         {this.state.isBig &&
           <div className={classes.root}>
             <GridList cellHeight={170} className='gridList' cols={4}>
