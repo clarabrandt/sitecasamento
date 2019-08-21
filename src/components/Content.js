@@ -30,6 +30,7 @@ export default class Content extends Component {
     this.goToComponent = this.goToComponent.bind(this);
   }
 
+
   componentDidUpdate() {
     this.goToComponent()
   }
