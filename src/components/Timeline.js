@@ -46,7 +46,7 @@ export default class Timeline extends Component {
             <div className="history-content">
               <div className='timeline-date'>31 Ago 2017</div>
               <img className='pic--img pic-story' src={cristo} height='433' width='320' alt="Party" />
-              <div className='timeline-text'> Primeira viagem do Tomás ao Rio de Janeiro. Aprovado pelos amigos da Sá, ainda fizeram uma viagem à São Paulo com as primas dela, sua irmã/cunhado/sobrinho e Tomás encontrou seu grande amigo (e padrinho) Vilhaça que morava lá!</div>
+              <div className='timeline-text'> Primeira viagem do Tomás ao Rio de Janeiro. Aprovado pelos amigos da Sá, ainda fizeram uma viagem a São Paulo com as primas dela, sua irmã/cunhado/sobrinho e Tomás encontrou seu grande amigo (e padrinho) Vilhaça que morava lá!</div>
             </div>
           </Slide>
         </div>
