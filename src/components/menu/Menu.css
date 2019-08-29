@@ -1,0 +1,52 @@
+/* .menu {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-self: center;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  padding: 10px 0;
+} */
+.menu.sticky {
+  position: sticky;
+  background-color: white;
+  transition: 1s;
+  z-index: 9999;
+  top: 0
+}
+.menuLargeScreen {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  align-self: center;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  padding: 10px 0;
+
+}
+
+.heart-icon--menu{
+  align-self: center;
+}
+
+
+
+@media only screen and (max-width: 780px) {
+  
+}
+@media only screen and (max-width: 620px) {
+  .heart-icon--menu{
+    display: none;
+  }
+  
+}
+@media only screen and (max-width: 330px) {
+  .heart-icon--menu{
+    display: none;
+  }
+ 
+} 
