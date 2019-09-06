@@ -1,6 +1,6 @@
 .honeymoon-banner2 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url('https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/saetomas_elefante.65d1914c.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -9,36 +9,30 @@
 
 @media only screen and (max-width: 1024px) {
   .honeymoon-banner2 {
-    width: 100%;
     background-position: 50% 75%;
-    background-size: cover;
     margin-bottom: 50px;
   }
 
 }
 @media only screen and (max-width: 780px) {
   .honeymoon-banner2 {
-    width: 100%;
     background-position: 50% 75%;
-    background-size: cover;
     margin-bottom: 50px;
   }
 
 }
 @media only screen and (max-width: 620px) {
   .honeymoon-banner2 {
-    width: 100%;
-    background-position: 50% 75%;
-    background-size: cover;
-    margin-bottom: 50px;
+    display: none;
+    /* background-position: 50% 75%;
+    margin-bottom: 50px; */
   }
 
 }
 @media only screen and (max-width: 330px) {
   .honeymoon-banner2 {
-    width: 100%;
-    background-position: 50% 75%;
-    background-size: cover;
-    margin-bottom: 50px;
+    display: none;
+    /* background-position: 50% 75%;
+    margin-bottom: 50px; */
   }
 }
