@@ -3,6 +3,17 @@
   height: 250px;
 }
 
+.dados_bancarios{
+  padding: 15px;
+  font-size: 1.3rem
+}
+.modal_table{
+  display: flex;
+}
+.price-text{
+  padding-top: 20px;
+}
+
 /* @media only screen and (max-width: 620px) {
   .honeymoon-card--pic {
     width: 250px;

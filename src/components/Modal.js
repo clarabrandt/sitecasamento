@@ -12,7 +12,7 @@ class Modal extends React.Component {
           <div className={`modal ${!!isOpen ? 'visible' : 'hidden'}`}>
             <div className={`modal__container ${!!isOpen ? 'visible' : 'hidden'}`}>
               <div className="modal__header">
-                <div className="modal__title" />
+                <div className="modal__title">Ficamos muito felizes por você querer nos ajudar na nossa lua de mel!</div>
                 <div className="modal__close" onClick={toggleFn}>
                   X
                 </div>
