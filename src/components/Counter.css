@@ -1,12 +1,7 @@
 .counter {
   width: 100%;
-  /* height: 80vh;
-  position: relative; */
-  background: url("./photos/riodejaneiro2.jpg");
-  /* background-attachment: scroll; */
-  /* background-size: cover; */
+  background: url("https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/riodejaneiro2.903ad8ed.jpg");
   height: 70vh;
-  /* background-image: url('./photos/saetomas_elefante.jpg'); */
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +21,6 @@
   text-align: center;
   font-size: 3.3rem; 
   color: #4c403d;
-  /* color: rgb(59, 59, 59); */
   font-weight: 600; 
   font-weight: 600; 
   width: 100%;
@@ -41,7 +35,6 @@
   align-items: baseline;
 }
 .counter-timer-text {
-  /* color: #4c403d; */
   color: #4c403d;
   font-size: 2.2rem;
   margin-left: 50px;

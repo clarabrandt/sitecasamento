@@ -23,33 +23,21 @@ export default class Card extends Component {
 
     this.toggleModalEuro = this.toggleModalEuro.bind(this);
     this.toggleModalReal = this.toggleModalReal.bind(this);
-    // this.toggleModal = this.toggleModal.bind(this);
     this.renderModalEuro = this.renderModalEuro.bind(this);
     this.renderModalReal = this.renderModalReal.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmitReal = this.handleSubmitReal.bind(this);
-    this.handleSubmitEuro = this.handleSubmitEuro.bind(this);
 
   }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
-
-  handleSubmitReal(event) {
-    event.preventDefault();
-    this.setState({ novoNumero: this.props.numero - this.state.value })
-  }
-  handleSubmitEuro(event) {
-    event.preventDefault();
-    this.setState({ newNumber: this.props.number - this.state.value })
+  toggleScroll() {
+    const disable = this.state.modalRealOpen || this.state.modalEuroOpen;
+    document.documentElement.style.overflowY = disable ? 'hidden' : '';
   }
 
 
   renderModalEuro() {
     return (
       <Modal toggleFn={this.toggleModalEuro} isOpen={this.state.modalEuroOpen}>
-        <div className='modal__title'>Estas são apenas sugestões, o valor do presente fica a seu critério.</div>
+        <div className='modal__title'>Ficamos muito felizes por você querer nos ajudar na nossa lua de mel!</div>
         <div className='modal__title'>Para isso, pedimos que você faça uma transferência bancária da quantia escolhida para nossa conta na Europa:</div>
         <div className='dados-bancarios'>
           <div className='dados-bancarios--indices'>
@@ -69,7 +57,7 @@ export default class Card extends Component {
   renderModalReal() {
     return (
       <Modal toggleFn={this.toggleModalReal} isOpen={this.state.modalRealOpen}>
-        <div className='modal__title'>Estas são apenas sugestões de presentes.</div>
+        <div className='modal__title'>Ficamos muito felizes por você querer nos ajudar na nossa lua de mel!</div>
         <div className='modal__title'>Para isso, pedimos que você faça uma transferência bancária da quantia escolhida para nossa conta no Brasil:</div>
         <div className='dados-bancarios'>
           <div className='dados-bancarios--indices'>
@@ -92,14 +80,12 @@ export default class Card extends Component {
   toggleModalEuro() {
     this.setState(prevState => ({
       modalEuroOpen: !prevState.modalEuroOpen,
-    }));
-    console.log('modal euro')
+    }), this.toggleScroll);
   };
   toggleModalReal() {
     this.setState(prevState => ({
       modalRealOpen: !prevState.modalRealOpen,
-    }));
-    console.log('modal real')
+    }), this.toggleScroll);
   };
 
 

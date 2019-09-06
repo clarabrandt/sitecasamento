@@ -31,16 +31,15 @@
 }
 
 
-/* @media only screen and (max-width: 620px) {
-  .honeymoon-card--pic {
-    width: 250px;
-    height: 200px;
+@media only screen and (max-width: 620px) {
+  .dados-bancarios {
+   margin: 0 0 30px 0;
+
   }
 }
 @media only screen and (max-width: 320px) {
-  .honeymoon-card--pic {
-    width: 230px;
-    height: 200px;
-  }
+  .dados-bancarios {
+    margin: 0 0 30px 0;
+   }
  
-} */
+}

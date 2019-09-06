@@ -17,12 +17,21 @@ export default class Menu extends Component {
     this.onScroll = this.onScroll.bind(this);
   }
 
-  onScroll() {
+  componentDidMount() {
+    window.addEventListener('scroll', this.onScroll);
+  }
 
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+  }
+
+
+  onScroll() {
+    let offsetTop = this.menu.current.getBoundingClientRect().top;
     const isTop =
-      window.pageYOffset <= 790 ? false : true;
+      offsetTop < 0 ? false : true;
     this.setState({
-      sticky: isTop
+      sticky: isTop,
     });
   }
 

@@ -39,9 +39,9 @@ export default class Local extends Component {
             </div>
             <div className='end'>Endereço: R. das Palmeiras, 35. Botafogo.</div>
           </div>
-          <div className='map'>
+          {/*<div className='map'>
             <img className='pic--img' src={festa} height='400' width='400' alt="Church" />
-          </div>
+    </div>*/}
         </div>
       </div>
     )

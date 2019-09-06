@@ -76,7 +76,7 @@
 .party{
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  margin: 0 30px;
 }
 .map{
   display: flex;

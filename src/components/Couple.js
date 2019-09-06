@@ -20,6 +20,12 @@ export default class Couple extends Component {
     this.renderModal = this.renderModal.bind(this);
   }
 
+
+  toggleScroll() {
+    const disable = this.state.modalOpen;
+    document.documentElement.style.overflowY = disable ? 'hidden' : '';
+  }
+
   renderModal() {
     return (
       <Modal toggleFn={this.toggleModal} isOpen={this.state.modalOpen}>
@@ -32,12 +38,8 @@ export default class Couple extends Component {
     this.setState(prevState => ({
       modalOpen: !prevState.modalOpen,
       selectedPicture: picture,
-    }));
+    }), this.toggleScroll);
   };
-
-  jalapenho = () => {
-    return this.toggleModal
-  }
 
   render() {
     return (
