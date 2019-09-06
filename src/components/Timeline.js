@@ -19,7 +19,7 @@ export default class Timeline extends Component {
           <Slide left>
             <div className="history-content">
               <div className='timeline-date date-left'>04 Jan 2017</div>
-              <img className='pic--img pic-story' src={festa} width='300' height='433' alt="Party" />
+
               <div className='timeline-text'>Começo do ano, balada com os amigos. Nos conhecemos na Pensão do amor.</div>
             </div>
           </Slide>
@@ -28,7 +28,7 @@ export default class Timeline extends Component {
           <Slide right>
             <div className="history-content">
               <div className='timeline-date'>27 Jan 2017</div>
-              <img className='pic--img pic-story' src={festa} height='300' width='433' alt="Party" />
+
               <div className='timeline-text'>Nossa primeira viagem juntos foi pra Alcobaça, ao norte de Lisboa. Mal sabíamos que seria a primeira de muuuuitas!</div>
             </div>
           </Slide>
@@ -81,7 +81,7 @@ export default class Timeline extends Component {
           <Slide right>
             <div className="history-content">
               <div className='timeline-date'>12 Dez 2018</div>
-              <img className='pic--img pic-story' src={festa} height='300' width='433' alt="Party" />
+
               <div className='timeline-text'>Nos mudamos para Lisboa. Foram 6 meses de reencontros, curtir a família e procurar emprego. Por fim, decidimos que o melhor seria voltarmos para Luxemburgo, onde ambos poderíamos trabalhar.</div>
             </div>
           </Slide>
@@ -90,7 +90,7 @@ export default class Timeline extends Component {
           <Slide left>
             <div className="history-content">
               <div className='timeline-date date-left'> Maio 2019</div>
-              <img className='pic--img pic-story' src={festa} height='300' width='433' alt="Party" />
+
               <div className='timeline-text'>Voltamos para Luxemburgo, ambos começamos a trabalhar e já montamos um cantinho para chamarmos de nosso!</div>
             </div>
           </Slide>

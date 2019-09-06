@@ -1,5 +1,5 @@
 .banner {
-    width: 100%;
+    width: auto;
     height: 100vh;
     position: relative;
     background: url("./photos/pedido.jpg");

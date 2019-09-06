@@ -1,20 +1,5 @@
 import React, { Component } from 'react';
 import './Madrinhas.css'
-import clara from './photos/madrinhas/eu.jpg'
-import bianca from './photos/madrinhas/bianca.jpg'
-import larise from './photos/madrinhas/larise.jpg'
-import filipa from './photos/madrinhas/filipa.jpg'
-import fernanda from './photos/madrinhas/fernanda.jpeg'
-import victor from './photos/padrinhos/victor.jpg'
-import vilaca from './photos/padrinhos/vilaca.jpg'
-import ashish from './photos/padrinhos/ashish.jpg'
-import amanda from './photos/madrinhas/amanda.jpg'
-import lucas from './photos/pajens/lucas.jpg'
-import davi from './photos/pajens/davi.jpg'
-import antonio2 from './photos/padrinhos/Antonio2.JPG'
-import joao from './photos/padrinhos/joao.JPG'
-import theo2 from './photos/pajens/theo2.jpeg'
-import goncalo from './photos/padrinhos/goncalo.png'
 
 class Madrinhas extends Component {
   render() {
@@ -23,73 +8,73 @@ class Madrinhas extends Component {
         <div className='component-title'>Pajem, Madrinhas e Padrinhos</div>
         <div className='madrinhas-content'>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={theo2} alt="theo" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/theo2.f3c937f3.jpeg' alt="theo" />
             <div className='madrinhas-name'>Theo</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={lucas} alt="amanda" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/lucas.95279ab7.jpg' alt="amanda" />
             <div className='madrinhas-name'>Lucas</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={davi} alt="antonio" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/davi.2f5699ab.jpg' alt="antonio" />
             <div className='madrinhas-name'>Davi</div>
           </div>
         </div>
         <div div className='padrinhos-content'>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={amanda} alt="amanda" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/amanda.757e1e87.jpg' alt="amanda" />
             <div className='madrinhas-name'>Amanda</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={antonio2} alt="antonio" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/Antonio2.20d13943.jpeg' alt="antonio" />
             <div className='madrinhas-name'>António</div>
           </div>
         </div>
         <div className='madrinhas-content'>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={bianca} alt="bianca" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/bianca.c6a0b18d.jpg' alt="bianca" />
             <div className='madrinhas-name'>Bianca</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={ashish} alt="ashish" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/ashish.96bb412c.jpg' alt="ashish" />
             <div className='madrinhas-name'>Ashish</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={clara} alt="amanda" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/eu.e0631a90.jpg' alt="amanda" />
             <div className='madrinhas-name'>Clara</div>
           </div>
         </div>
         <div className='padrinhos-content'>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={filipa} alt="victor" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/filipa.a8c546cc.jpg' alt="victor" />
             <div className='madrinhas-name'>Filipa</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={joao} alt="bianca" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/joao.7faab38f.jpeg' alt="joao" />
             <div className='madrinhas-name'>João</div>
           </div>
         </div>
         <div className='madrinhas-content'>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={goncalo} alt="gonçalo" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/goncalo.6037b0dd.png' alt="gonçalo" />
             <div className='padrinhos-name'>Gonçalo</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={larise} alt="antonio" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/larise.db7bd52b.jpg' alt="larise" />
             <div className='madrinhas-name'>Larise</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={vilaca} alt="clara" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/vilaca.55914c36.jpg' alt="vilaca" />
             <div className='padrinhos-name'>Vilaça</div>
           </div>
         </div>
         <div className='padrinhos-content'>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={fernanda} alt="fernanda" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/fernanda.a47109cd.jpeg' alt="fernanda" />
             <div className='madrinhas-name'>Fernanda</div>
           </div>
           <div className='madrinhas-each'>
-            <img className='madrinhas-photo' src={victor} alt="victor" />
+            <img className='madrinhas-photo' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/victor.3aef2294.jpg' alt="victor" />
             <div className='madrinhas-name'>Victor</div>
           </div>
         </div>

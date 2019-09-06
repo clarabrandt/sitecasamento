@@ -43,7 +43,7 @@
       .modal__title {
         flex-grow: 1;
         padding: 15px;
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
       .modal__close {
         height: 80px;

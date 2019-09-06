@@ -3,16 +3,33 @@
   height: 250px;
 }
 
-.dados_bancarios{
-  padding: 15px;
-  font-size: 1.3rem
-}
-.modal_table{
-  display: flex;
-}
 .price-text{
   padding-top: 20px;
 }
+.dados-bancarios {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.indice,
+.conteudo_banco,
+.conteudo_nome,
+.conteudo_agencia,
+.conteudo_conta {
+  padding: 5px;
+  font-size: 1.1rem;
+}
+.conteudo_banco {
+  color: #882211;
+  
+}
+.conteudo_banco,
+.conteudo_nome,
+.conteudo_agencia,
+.conteudo_conta {
+  font-weight: 600;
+}
+
 
 /* @media only screen and (max-width: 620px) {
   .honeymoon-card--pic {

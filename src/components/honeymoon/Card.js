@@ -39,49 +39,29 @@ export default class Card extends Component {
   handleSubmitReal(event) {
     event.preventDefault();
     this.setState({ novoNumero: this.props.numero - this.state.value })
-    // if (this.state.newValue === 0) {
-    //   this.setState({ newValue: this.props.numero - this.state.value })
-    // } else {
-    //   this.setState({ newValue: this.state.newValue - this.state.value })
-    // }
   }
   handleSubmitEuro(event) {
     event.preventDefault();
     this.setState({ newNumber: this.props.number - this.state.value })
-    // if (this.state.newValue === 0) {
-    //   this.setState({ newValue: this.props.numero - this.state.value })
-    // } else {
-    //   this.setState({ newValue: this.state.newValue - this.state.value })
-    // }
   }
-
-  // componentDidMount() {
-  //   if (this.state.newValue === 0) {
-  //     console.log(this.state.newValue, this.props.numero, this.state.value);
-  //     this.setState({ newValue: this.props.numero - this.state.value })
-  //   }
-  //   else {
-  //     this.setState({ newValue: this.state.newValue - this.state.value })
-  //   }
-  // }
 
 
   renderModalEuro() {
     return (
       <Modal toggleFn={this.toggleModalEuro} isOpen={this.state.modalEuroOpen}>
-        <div className='modal__title'>Para isso, pedimos que você faça uma transferência bancária com o valor escolhido para nossa conta na Europa:</div>
-        <div className='dados_bancarios'>IBAN</div>
-        <div className='modal_table'>
-          <div>Item escolhido: {this.props.title}</div>
-          <form onSubmit={this.handleSubmitEuro}>
-            <label>
-              Quotas
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-            </label>
-            <Button variant="contained" size='small' type='submit' onClick={this.toggleModalReal}>
-              Confirmar
-            </Button>
-          </form>
+        <div className='modal__title'>Estas são apenas sugestões, o valor do presente fica a seu critério.</div>
+        <div className='modal__title'>Para isso, pedimos que você faça uma transferência bancária da quantia escolhida para nossa conta na Europa:</div>
+        <div className='dados-bancarios'>
+          <div className='dados-bancarios--indices'>
+            <div className='indice'>Nome:</div>
+            <div className='indice'>IBAN:</div>
+            <div className='indice'>BIC:</div>
+          </div>
+          <div className='dados-bancarios--conteudo'>
+            <div className='conteudo_nome'>Tomás Leite Clara Sousa Eiró </div>
+            <div className='conteudo_agencia'>PT50 0269 0101 00200079071 49</div>
+            <div className='conteudo_conta'>BKBKPTPL</div>
+          </div>
         </div>
       </Modal>
     );
@@ -89,21 +69,21 @@ export default class Card extends Component {
   renderModalReal() {
     return (
       <Modal toggleFn={this.toggleModalReal} isOpen={this.state.modalRealOpen}>
-        <div className='modal-title'>Para isso, pedimos que você faça uma transferência bancária com o valor escolhido para nossa conta Bradesco:</div>
-        <div>Agência</div>
-        <div>Conta</div>
-        <div>
-
-          <div>Item escolhido: {this.props.title}</div>
-          <form onSubmit={this.handleSubmitReal}>
-            <label>
-              Quotas
-            <input type="text" value={this.state.value} onChange={this.handleChange} />
-            </label>
-            <Button variant="contained" size='small' type='submit' onClick={this.toggleModalReal}>
-              Confirmar
-            </Button>
-          </form>
+        <div className='modal__title'>Estas são apenas sugestões de presentes.</div>
+        <div className='modal__title'>Para isso, pedimos que você faça uma transferência bancária da quantia escolhida para nossa conta no Brasil:</div>
+        <div className='dados-bancarios'>
+          <div className='dados-bancarios--indices'>
+            <div className='indice'>Banco:</div>
+            <div className='indice'>Nome:</div>
+            <div className='indice'>Agência:</div>
+            <div className='indice'>Conta:</div>
+          </div>
+          <div className='dados-bancarios--conteudo'>
+            <div className='conteudo_banco'>BRADESCO</div>
+            <div className='conteudo_nome'>Sabrina Brandt</div>
+            <div className='conteudo_agencia'>1683</div>
+            <div className='conteudo_conta'>139858-0</div>
+          </div>
         </div>
       </Modal>
     );

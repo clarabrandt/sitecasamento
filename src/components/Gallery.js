@@ -3,88 +3,68 @@ import './Gallery.css'
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import { withStyles } from '@material-ui/core/styles';
-import one from './photos/gallery/SaeTomas1.jpg'
-import brinde from './photos/gallery/SaeTomas2.jpg'
-import natal from './photos/gallery/SaeTomas3.jpeg'
-import risada from './photos/gallery/risada.jpeg'
-import paris from './photos/gallery/paris.jpeg'
-import boca from './photos/gallery/boca.jpeg'
-import susto from './photos/gallery/SaeTomas6.jpeg'
-import oculos from './photos/gallery/oculos.jpeg'
-import eles from './photos/gallery/eles.jpeg'
-import neve from './photos/gallery/neve.jpeg'
-import four from './photos/gallery/pertinho(1).jpg'
-import five from './photos/gallery/castelo(1).jpg'
-import civil from './photos/gallery/civil2.jpg'
-import alianca from './photos/gallery/alianca2.jpg'
-import lux from './photos/gallery/lux.jpg'
-import close from './photos/gallery/close.jpg'
 import londres from './photos/gallery/londres.jpg'
-import vinho from './photos/gallery/vinho.jpg'
-import deserto from './photos/timeline/deserto.jpg'
-import casorio2 from './photos/gallery/casorio2.jpg'
-import dubai from './photos/gallery/dubai.jpg'
-import coracao from './photos/gallery/SaeTomas5.jpeg'
+
 
 const tileData = [
   {
-    img: natal,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/SaeTomas3.28701e0d.jpeg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: true
   },
   {
-    img: alianca,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/alianca2.a37a7e88.jpg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: true
   },
   {
-    img: eles,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/eles.ff326989.jpeg',
     title: 'Image',
     author: 'author',
     cols: true,
     rows: true
   },
   {
-    img: susto,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/SaeTomas6.0f0c4085.jpeg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: false
   },
   {
-    img: brinde,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/SaeTomas2.87ac1b43.jpg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: false
   },
   {
-    img: coracao,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/SaeTomas5.9341fe83.jpeg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: false
   },
   {
-    img: boca,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/boca.c05d982d.jpeg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: false
   },
   {
-    img: vinho,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/vinho.947d5cce.jpg',
     title: 'Image',
     author: 'author',
     cols: true,
     rows: true
   },
   {
-    img: oculos,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/oculos.f6ddde15.jpeg',
     title: 'Image',
     author: 'author',
     cols: true,
@@ -92,7 +72,7 @@ const tileData = [
   },
 
   {
-    img: close,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/close.468c9b99.jpg',
     title: 'Image',
     author: 'author',
     cols: true,
@@ -106,77 +86,77 @@ const tileData = [
     rows: true
   },
   {
-    img: deserto,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/deserto.186d799d.jpg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: true
   },
   {
-    img: civil,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/civil2.e5628a85.jpg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: true
   },
   {
-    img: four,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/pertinho(1).d4458eb3.jpg',
     title: 'Image',
     author: 'author',
     cols: true,
     rows: true
   },
   {
-    img: paris,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/paris.869ffa2d.jpeg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: true
   },
   {
-    img: casorio2,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/casorio2.8fef8c15.jpg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: false
   },
   {
-    img: neve,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/neve.9c75e41e.jpeg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: false
   },
   {
-    img: lux,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/lux.00328476.jpg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: false
   },
   {
-    img: five,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/castelo(1).d8d17309.jpg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: false
   },
   {
-    img: dubai,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/dubai.da12d01e.jpg',
     title: 'Image',
     author: 'author',
     cols: true,
     rows: true
   },
   {
-    img: risada,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/risada.8018824e.jpeg',
     title: 'Image',
     author: 'author',
     cols: false,
     rows: true
   },
   {
-    img: one,
+    img: 'https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/SaeTomas1.6af3b8e1.jpg',
     title: 'Image',
     author: 'author',
     cols: false,
