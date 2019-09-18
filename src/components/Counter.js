@@ -22,7 +22,7 @@ export default class Counter extends Component {
   }
 
   setTimer() {
-    const finalDate = new Date("Jan 4, 2020 18:00:00 GMT-5:00").getTime();
+    const finalDate = new Date("Jan 4, 2020 18:30:00 GMT-5:00").getTime();
     const now = new Date().getTime();
     const interval = finalDate - now;
     const days = Math.floor(interval / (1000 * 60 * 60 * 24));
