@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './Couple.css'
 import Modal from './Modal'
-import saetomas from './photos/casal/SaeTomas8.jpg'
 
+import saetomas from './photos/casal/SaeTomas8.jpg'
 
 
 export default class Couple extends Component {

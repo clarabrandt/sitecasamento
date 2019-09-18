@@ -24,12 +24,12 @@ export default class RSVP extends Component {
           {/*<iframe className='rsvp-form' src="https://docs.google.com/forms/d/e/1FAIpQLSehhgFEmA0EAnEftzgaM_JFd3FNpOU5zOP9enbSeVIvjy33eA/viewform?embedded=true" width="540" height="615" frameborder="0" marginheight="0" marginwidth="0" title='rsvp_form'>Loading...</iframe>*/}
         </div>
         <div className='foot'>
-          <div>Todos os direitos reservados &copy;</div>
-          <div>Feito por: Clara Brandt</div>
-          <div className='arrow' anchor="arrow" onClick={() => this.props.goToTop("arrow")} >
+          <div className='rodape'>Todos os direitos reservados &copy;</div>
+          <div className='rodape'>Feito por: Clara Brandt</div>
+          {/*<div className='arrow' anchor="arrow" onClick={() => this.props.goToTop("arrow")} >
             <div className='arrow-top--draw'></div>
             <div className='arrow-text'>Ir para o topo</div>
-          </div>
+    </div>*/}
         </div>
       </div>
     )

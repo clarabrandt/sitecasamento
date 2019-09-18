@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Timeline.css'
-import varandinha from './photos/timeline/varandinha.jpg'
+import varandinha from './photos/gallery/lux.jpg'
 import Slide from 'react-reveal/Slide';
 
 
@@ -33,7 +33,7 @@ export default class Timeline extends Component {
           <Slide left>
             <div className="history-content">
               <div className='timeline-date date-left'>01 Mai 2017</div>
-              <img className='pic--img pic-story' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/lux.00328476.jpg' width='300' height='433' alt="Terrace" />
+              <img className='pic--img pic-story' src={varandinha} width='300' height='433' alt="Terrace" />
               <div className='timeline-text'>Estávamos juntos há um mês e meio (em fevereiro) quando o Tomás recebeu a proposta de emprego da Amazon e, em maio, se mudou pra Luxemburgo. Em junho a Sá foi visitá-lo, e em julho se mudou para a casa que dividiriam pelo próximo ano.</div>
             </div>
           </Slide>
