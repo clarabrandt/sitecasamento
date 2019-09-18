@@ -4,7 +4,7 @@
 }
 .rsvp-content {
   display: flex;
-  background-color: rgb(247, 247, 247);
+  background-color: white;
   padding: 50px 100px 70px 100px;
   flex-direction: column;
   height: 100%;
@@ -22,10 +22,13 @@
   justify-content: space-between;
   background-color: #f0947dde;
   color: #4c403d;
-  padding: 20px;
+  padding: 20px 50px;
   height: 70px;
   justify-content: space-between;
   align-content: center;
+}
+.rodape {
+  font-size: 1rem;
 }
 .arrow {
   display: flex;
@@ -46,9 +49,7 @@
 
 @media only screen and (max-width: 1024px) {
   .rsvp-content {
-    background-color: rgb(247, 247, 247);
-    padding: 50px 100px 70px 100px;
-    margin-top: 100px;
+    padding: 20px 100px 70px 100px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -56,8 +57,7 @@
 }
 @media only screen and (max-width: 780px) {
   .rsvp-content {
-    background-color: rgb(247, 247, 247);
-    padding: 50px 100px 70px 100px;
+    padding: 20px 100px 70px 100px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -65,20 +65,38 @@
 }
 @media only screen and (max-width: 620px) {
   .rsvp-content {
-    background-color: rgb(247, 247, 247);
-    padding: 50px 20px 70px 20px;
+    padding: 20px 0 70px 0;
     display: flex;
     flex-direction: column;
     height: 100%;
   }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  .rodape {
+    font-size: 0.7rem;
+    padding: 5px 0;
+  }
 }
 @media only screen and (max-width: 330px) {
   .rsvp-content {
-    background-color: rgb(247, 247, 247);
-    padding: 50px 20px 70px 20px;
+    padding: 20px 0 70px 0;
     display: flex;
     flex-direction: column;
     height: 100%;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  .rodape {
+    font-size: 0.7rem;
+    padding: 5px 0;
   }
  
 }

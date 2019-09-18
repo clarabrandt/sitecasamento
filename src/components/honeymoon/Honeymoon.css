@@ -39,7 +39,7 @@
   padding: 15px;
   color: #882211;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 .price-text {
   color: #557777;
@@ -116,9 +116,6 @@
     grid-template-rows: auto;
     row-gap: 5rem;
     grid-row-gap: 3rem;
-  }
-  .honeymoon-card--title {
-    font-size: 0.9rem;
   }
  
 }

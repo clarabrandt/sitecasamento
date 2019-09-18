@@ -2,7 +2,7 @@
     width: auto;
     height: 100vh;
     position: relative;
-    background: url("./photos/pedido.jpg");
+    background: url("https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/pedido.20f59545.jpg");
     background-size: cover;
 }
 .banner-content {
@@ -92,13 +92,13 @@
 
   .banner-text {
     font-size: 46px;
-    top: 15%;
+    top: 20%;
     left: 50%;
   }
 
   .banner-date {
     font-size: 25px;
-    top: 30%;
+    top: 40%;
     left: 50%;
   }
 }
@@ -111,14 +111,14 @@
   }
 
   .banner-text {
-    font-size: 2.4rem;
-    top: 15%;
+    font-size: 2.3rem;
+    top: 20%;
     left: 50%;
   }
 
   .banner-date {
     font-size: 1.3rem;
-    top: 30%;
+    top: 40%;
     left: 50%;
   }
 }

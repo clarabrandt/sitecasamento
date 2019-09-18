@@ -102,12 +102,12 @@
   .counter-timer-day {
     width: 100%;
     justify-content: center;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     padding-left: 10px;
   }
   .counter-timer-text {
     margin: 30px 10px 0 10px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 @media only screen and (max-width: 330px) {
@@ -132,11 +132,11 @@
   .counter-timer-day {
     width: 100%;
     justify-content: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     padding-left: 10px;
   }
   .counter-timer-text {
     margin: 30px 10px 0 10px;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 }
