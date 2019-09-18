@@ -3,9 +3,6 @@ import './Local.css'
 // import love from './images/love.svg'
 import rings from './svg/rings.svg'
 import glasses from './svg/glasses.svg'
-import igreja from './images/igreja.jpg'
-import festa from './images/festa1.jpg'
-
 
 
 export default class Local extends Component {
@@ -13,7 +10,7 @@ export default class Local extends Component {
     return (
       <div className='local' ref={this.props.local}>
         <div className='component-title'>Data e Local</div>
-        <div className='local-text'>O casamento será no dia 04 de janeiro de 2020, às 18 horas, na Igreja Santa Margarida Maria, seguido pela festa no Solar das Palmeiras.</div>
+        <div className='local-text'>O casamento será no dia 04 de janeiro de 2020, às 18:30 horas, na Igreja Santa Margarida Maria, seguido pela festa no Solar das Palmeiras.</div>
         <div className='local-content'>
           <div className='church'>
             <div className='local-banner'>
@@ -23,7 +20,7 @@ export default class Local extends Component {
               </div>
             </div>
             <div className='pic'>
-              <img className='pic--img' src={igreja} height='300' width='300' alt="Church" />
+              <img className='pic--img' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/igreja.54e930ac.jpg' height='300' width='300' alt="Church" />
             </div>
             <div className='end'>Endereço: Rua Frei Solano, 23. Lagoa</div>
           </div>
@@ -35,7 +32,7 @@ export default class Local extends Component {
               </div>
             </div>
             <div className='pic'>
-              <img className='pic--img' src={festa} height='300' width='300' alt="Party" />
+              <img className='pic--img' src='https://picscasamentosaetomas.s3-sa-east-1.amazonaws.com/festa.c96ca58f.jpg' height='300' width='300' alt="Party" />
             </div>
             <div className='end'>Endereço: R. das Palmeiras, 35. Botafogo.</div>
           </div>
